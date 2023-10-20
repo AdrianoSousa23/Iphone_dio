@@ -16,17 +16,17 @@ classDiagram
         +pausarMusica()
         +selecionarMusica()
     }
-    interface AparelhoTelefonico {
+    class AparelhoTelefonico {
         +ligar(numero: String)
         +atender()
         +iniciarCorreioVoz()
     }
-    interface NavegadorInternet {
+   class NavegadorInternet {
         +exibirPaginas()
         +adicionarPagina()
         +atualizarPagina()
     }
-    interface ReprodutorMusica {
+    class ReprodutorMusica {
         +tocar(musica: String)
         +pausarMusica()
         +selecionarMusica()
@@ -38,6 +38,5 @@ classDiagram
     Iphone --|> AparelhoTelefonico
     Iphone --|> NavegadorInternet
     Iphone --|> ReprodutorMusica
-
 
 ```
